@@ -59,6 +59,15 @@ module.exports = {
       gas: 4500000,
       gasPrice: 10000000000,
   },
+
+  mainnet: {
+    provider: function() { 
+     return new HDWalletProvider(mnemonicPhrase, projectUrl);
+    },
+    network_id: 1,
+
+    gasPrice: 58000000000,
+},
   
     // Another network with more advanced options...
     // advanced: {
@@ -117,5 +126,14 @@ module.exports = {
 
   db: {
     enabled: false
-  }
+  },
+
+  api_keys: {
+    etherscan: 'E51X8RWHFZPHF9SS2BWT4C5Z1D3VY7DEHP'
+  },
+
+  plugins: [
+    'truffle-plugin-verify'
+  ]
+
 };
