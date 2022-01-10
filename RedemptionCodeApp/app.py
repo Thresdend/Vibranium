@@ -26,7 +26,7 @@ exchange_account = "0xE5902B8D4a8494676A9f7d6187bE4224Faa93EB1"
 user_account = "0xc0489A995830649b191b0f06F57AE0478Cda4539"
 value = w3.toWei(100, 'ether')
 
-# After validation, use this to transfer eth to user
+# After validation, use this to transfer VBR to user
 
 # get nonce
 nonce = w3.eth.getTransactionCount(exchange_account)
