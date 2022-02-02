@@ -36,9 +36,9 @@ nonce = w3.eth.getTransactionCount(exchange_account)
 vibranium_tx = vibranium.functions.transfer(
          user_account, value
     ).buildTransaction({
-        'chainId': 4,
+        'chainId': 1666600000,
         'gas': 70000,
-        'gasPrice': w3.toWei('50', 'gwei'),
+        'gasPrice': w3.toWei('30', 'gwei'),
         'nonce': nonce,
     })
 

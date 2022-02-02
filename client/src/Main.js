@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import vibraniumLogo from './vibranium-logo.png'
-import ethLogo from './eth-logo.png'
+import oneLogo from './ONE-logo.png'
 class Main extends Component {
 
   constructor(props) {
@@ -21,7 +21,7 @@ class Main extends Component {
             console.log("purchasing tokens...")
           }}>
             <div>
-              <label className="float-left"><b>ETH</b></label>&nbsp;
+              <label className="float-left"><b>ONE</b></label>&nbsp;
               <span className="float-right text-muted">
               Balance: {window.web3.utils.fromWei(this.props.yourEthBalance, "Ether")}
               </span>
@@ -42,8 +42,8 @@ class Main extends Component {
                 required />
               <div className="input-group-append">
                 <div className="input-group-text">
-                  <img src={ethLogo} height='32' alt=""/>
-                  &nbsp;&nbsp;&nbsp; ETH
+                  <img src={oneLogo} height='32' alt=""/>
+                  &nbsp;&nbsp;&nbsp; ONE
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ class Main extends Component {
             </div>
             <div className="mb-5">
               <span className="float-left text-muted">Exchange Rate</span>
-              <span className="float-right text-muted">1 ETH = {this.props.vibraniumRate} Vibranium</span>
+              <span className="float-right text-muted">1 ONE = {this.props.vibraniumRate} Vibranium</span>
             </div>
             <button type="submit" className="btn btn-block btn-lg btn-info">Buy Vibranium!</button>
           </form>
