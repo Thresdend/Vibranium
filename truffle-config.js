@@ -56,18 +56,34 @@ module.exports = {
        return new HDWalletProvider(mnemonicPhrase, projectUrl);
       },
       network_id: 4,
-      gas: 4500000,
-      gasPrice: 10000000000,
+      gas: 3000000,
+      gasPrice: 50,
   },
 
-  mainnet: {
+  avalanche: {
     provider: function() { 
      return new HDWalletProvider(mnemonicPhrase, projectUrl);
     },
     network_id: 1,
-
-    gasPrice: 58000000000,
+    gas: 3000000,
+    gasPrice: 50,
 },
+
+harmony: {
+  provider: function() { 
+   return new HDWalletProvider(mnemonicPhrase, projectUrl);
+  },
+  network_id: 1666600000
+},
+
+//  mainnet: {
+//    provider: function() { 
+//     return new HDWalletProvider(mnemonicPhrase, projectUrl);
+//    },
+//    network_id: 1,
+
+//    gasPrice: 58000000000,
+// },
   
     // Another network with more advanced options...
     // advanced: {
@@ -110,7 +126,7 @@ module.exports = {
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
       optimizer: {
-      enabled: false,
+      enabled: true,   
       runs: 200
       },
       evmVersion: "byzantium"
@@ -127,7 +143,5 @@ module.exports = {
   db: {
     enabled: false
   },
-
-
 
 };

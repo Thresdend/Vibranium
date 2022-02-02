@@ -143,22 +143,22 @@ class Main extends Component {
                 </button>
             </form>
             <br></br><br></br>
-            <h1>ETH in your wallet = {window.web3.utils.fromWei(this.props.yourEthBalance, "Ether")}</h1>
-            <h1>ETH in Vibranium Exchange = {window.web3.utils.fromWei(this.props.exchangeEthBalance, "Ether")}</h1>
+            <h1>ONE in your wallet = {window.web3.utils.fromWei(this.props.yourEthBalance, "Ether")}</h1>
+            <h1>ONE in Vibranium Exchange = {window.web3.utils.fromWei(this.props.exchangeEthBalance, "Ether")}</h1>
             <br></br><br></br>
             <form>
-                <h1>Enter ETH amount to withdraw:</h1>
+                <h1>Enter ONE amount to withdraw:</h1>
                 <input type="text"
                 onChange={this.handleEthWithdrawal}
                 ref = {(input) => {this.input = input}}
-                placeholder="ETH amount" required/>
+                placeholder="ONE amount" required/>
                 <button type="button" onClick= {this.handleSubmitEthWithdrawal} className="btn btn-primary text-center btn-sm mb-1 ml-1">
-                    Withdraw ETH
+                    Withdraw ONE
                 </button>
             </form>
             <br></br><br></br>
-            <h1>Your Vibranium Balance = {window.web3.utils.fromWei(this.props.yourVibraniumBalance, "Ether")}</h1>
-            <h1>Vibranium in Vibranium Exchange = {window.web3.utils.fromWei(this.props.exchangeVibraniumBalance, "Ether")}</h1>
+            <h1>Your VBR Balance = {window.web3.utils.fromWei(this.props.yourVibraniumBalance, "Ether")}</h1>
+            <h1>VBR in Vibranium Exchange = {window.web3.utils.fromWei(this.props.exchangeVibraniumBalance, "Ether")}</h1>
             <br></br><br></br>
             <form>
                 <h1>Enter recipient address and amount to transfer from exchange:</h1>
@@ -169,9 +169,9 @@ class Main extends Component {
                                 <input type="text"
                 onChange={this.handleVibraniumTransferAmount}
                 ref = {(input) => {this.input = input}}
-                placeholder="Vibranium amount" required/>
+                placeholder="VBR amount" required/>
                 <button type="button" onClick= {this.handleSubmitVibraniumTransfer} className="btn btn-primary text-center btn-sm mb-1 ml-1">
-                    Transfer Vibranium
+                    Transfer VBR
                 </button>
             </form>
             <form>
